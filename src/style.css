@@ -1,14 +1,25 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+.navbar-brand {
+  font-size: 1.25rem;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.hero img {
+  border-radius: 10px;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+
+footer h5, footer h6 {
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
 }
