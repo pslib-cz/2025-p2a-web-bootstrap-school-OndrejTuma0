@@ -26,11 +26,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Domů</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="">Studijní obory</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Novinky</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Události</a></li>
+          <li class="nav-item"><a class="nav-link" href="#obory">Studijní obory</a></li>
+          <li class="nav-item"><a class="nav-link" href="#novinky">Novinky</a></li>
+          <li class="nav-item"><a class="nav-link" href="#udalosti">Události</a></li>
           <li class="nav-item ms-lg-3">
-            <a class="btn btn-primary" href="#">Přihláška</a>
+            <a class="btn btn-primary">Přihláška</a>
           </li>
         </ul>
       </div>
@@ -44,8 +44,8 @@
           <span class="badge" style="background-color: orangered;">Fiktivní ukázkový web</span>
           <h1 class="display-6 fw-bold">Střední odborná škola Digital</h1>
           <p class="lead mb-4">Moderní vzdělávání v IT, designu a digitálních médiích. Studujte u nás, jsme vaše <em>jednička!</em></p>
-          <a href="#" class="btn btn-primary mb-3">Studijní obory</a>
-          <a href="#" class="btn btn-outline-secondary ms-2 mb-3">Nejčastější dotazy</a>
+          <a href="#obory" class="btn btn-primary mb-3">Studijní obory</a>
+          <a href="#dotazy" class="btn btn-outline-secondary ms-2 mb-3">Nejčastější dotazy</a>
           <div class="meta d-flex gap-4 small">
             <div><p class="fs-3 fw-medium">45 000+</p><p class="fs-6 text-muted">Absolventů</p></div>
             <div><p class="fs-3 fw-medium">150</p><p class="fs-6 text-muted">Let zkušeností</p></div>
@@ -59,7 +59,7 @@
     </div>
   </header>
 
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-light" id="obory">
     <div class="container">
       <h2 class="mb-4">Studijní obory</h2>
       <div class="row g-3">
@@ -91,15 +91,23 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <section class="py-5" id="novinky">
     <div class="container">
-      <h2 class="mb-4">Novinky</h2>
+      <div class="row mb-3">
+        <div class="col-8">
+          <h2>Novinky</h2>
+        </div>
+        <div class="col-4 d-flex align-items-baseline">
+          <input type="text" class="form-control me-2" placeholder="Hledat...">
+          <a class="btn btn-outline-secondary">Hledat</a>
+        </div>
+      </div>
       <div class="row g-3">
         <div class="col-md-4">
           <div class="card h-100">
             <img src="novinky-dod.webp" class="card-img-top" alt="alt">
             <div class="card-body shadow-sm">
-              <span class="badge bg-danger mb-2">Aktualita</span>
+              <span class="badge mb-2" style="background-color: rgb(255, 123, 0);">Aktualita</span>
               <h5 class="card-title">Den otevřených dveří – říjen</h5>
               <p class="card-text">Zveme uchazeče a rodiče na prohlídku školy, laboratoří a ateliérů.</p>
               <a href="#" class="stretched-link">Číst více</a>
@@ -121,7 +129,7 @@
           <div class="card h-100">
             <img src="novinky-vr.webp" class="card-img-top" alt="alt">
             <div class="card-body shadow-sm">
-              <span class="badge bg-info mb-2">Vybavení</span>
+              <span class="badge bg-info mb-2 text-dark">Vybavení</span>
               <h5 class="card-title">Nové VR studio</h5>
               <p class="card-text">Rozšiřujeme multimediální výuku o virtuální realitu a 3D scanning.</p>
               <a href="#" class="stretched-link">Číst více</a>
@@ -130,14 +138,14 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-center mt-4">
-        <nav aria-label="Stránkování novinek">
-          <ul class="pagination pagination-sm">
+      <div class="d-flex justify-content-start mt-4">
+        <nav>
+          <ul class="pagination">
             <li class="page-item disabled"><a class="page-link" href="#">Předchozí</a></li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Další</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color: rgb(255, 153, 0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color: rgb(255, 153, 0);">3</a></li>
+            <li class="page-item"><a class="page-link" href="#" style="color: rgb(255, 153, 0);">Další</a></li>
           </ul>
         </nav>
       </div> 
@@ -145,7 +153,7 @@
     </div>
   </section>
 
-  <section id="events" class="py-5">
+  <section id="udalosti" class="py-5">
     <div class="container">
       <h2 class="mb-4">Nadcházející události</h2>
     <div class="row g-3">
@@ -234,7 +242,7 @@
     </div>
   </section>
 
-  <section class="py-5">
+  <section class="py-5" id="dotazy">
     <div class="container">
       <h2 class="mb-4">Časté dotazy</h2>
       <div class="row">
@@ -278,7 +286,7 @@
           <div class="p-4 text-white rounded" style="background-color: rgb(255, 115, 0);">
             <h4 class="fw-bold">Přihlas se na SOŠ Digital</h4>
             <p>Staň se součástí kreativní a technologické komunity. Přihlášky přijímáme online.</p>
-            <a href="#" class="btn btn-light">Vyplnit přihlášku</a>
+            <a class="btn btn-light">Vyplnit přihlášku</a>
           </div>
         </div>
       </div>
@@ -292,14 +300,16 @@
         <div class="col-md-6 border bg-white p-4 rounded shadow-sm">
           <h4 class="mb-3">Napište nám</h4>
           <form>
-            <div class="mb-3">
+            <div class="row">
+            <div class="col-md-6 mb-3">
               <label class="form-label">Jméno</label>
               <input type="text" class="form-control">
             </div>
-            <div class="mb-3">
+            <div class="col-md-6 mb-3">
               <label class="form-label">E-mail</label>
               <input type="email" class="form-control">
             </div>
+          </div>
             <div class="mb-3">
               <label class="form-label">Předmět</label>
               <input type="text" class="form-control">
@@ -318,19 +328,21 @@
         </div>
         <div class="col-md-6 p-4">
           <h4 class="mb-4">Kde nás najdete</h4>
+          <div class="row">
           <div class="col-md-6 p-1">
-            <div class="container bg-light border border-success rounded mb-3 p-3" style="--bs-border-opacity: .1;">
+            <div class="container bg-light border border-success rounded mb-3 p-3" style="--bs-border-opacity: .15;">
                 <p class="fw-bold mb-0">Adresa</p>
                 <p>U Digitálu 12<br>460 01 Liberec</p>
             </div>
           </div>
           <div class="col-md-6 p-1">
-            <div class="container bg-light border border-success rounded p-3" style="--bs-border-opacity: .1;">
+            <div class="container bg-light border border-success rounded p-3" style="--bs-border-opacity: .15;">
                 <p class="fw-bold mb-0">Kontakt</p>
                 <p><a href="#">+420 123 456 789</a><br>
                 <a href="#">info@sosdigital.cz</a></p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
