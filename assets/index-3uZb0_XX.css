@@ -1,4 +1,4 @@
-@charset "UTF-8";:root{font-family:system-ui,Avenir,Helvetica,Arial,sans-serif;line-height:1.5;font-weight:400;color-scheme:light dark;color:#ffffffde;background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}/*!
+@charset "UTF-8";body{font-family:Segoe UI,Arial,sans-serif}.navbar-brand{font-size:1.25rem}.hero img{border-radius:10px}.card{transition:transform .2s ease-in-out}.card:hover{transform:translateY(-4px)}footer h5,footer h6{font-weight:700}footer a:hover{text-decoration:underline}/*!
 * Bootstrap  v5.3.8 (https://getbootstrap.com/)
 * Copyright 2011-2025 The Bootstrap Authors
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
